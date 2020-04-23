@@ -152,4 +152,4 @@ app.post("/admin", function (req, res) {
   else res.render("incorrect");
 });
 
-app.listen(3000);
+app.listen(process.env.PORT || 3000);
