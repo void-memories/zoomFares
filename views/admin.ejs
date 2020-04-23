@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 class="head">THE ADMIN'S PANEL</h1>
+    <table>
+      <thead>
+        <th>NAME</th>
+        <th>MOBILE NUMBER</th>
+        <th>REG ID</th>
+        <th>VEHICLE TYPE</th>
+        <th>MODEL NAME</th>
+        <th>TOTAL HOURS</th>
+        <th>TOTAL FARE</th>
+      </thead>
+
+      <tbody>
+        <% for( var i = 0; i < totalNames.length; i++ ) { %>
+        
+        
+
+        <tr>
+          <td><%= totalNames[i] %></td>
+          <td><%= totalMob[i] %></td>
+          <td><%= totalReg[i] %></td>
+          <td><%= totalVt[i] %></td>
+          <td><%= totalVn[i] %></td>
+          <td><%= totalHour[i] %></td>
+          <td><%= totalFare[i] %></td>
+        </tr>
+        <% } %>
+
+        
+      </tbody>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zoom Fare</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="d1">
+        <p>BOOK YOUR RIDE</p>
+      <form action="/" method="POST">
+        <input type="text" placeholder="Full Name" name="name" id="name" />
+        <input type="text" placeholder="Mobile Number" name="mob" id="mob" />
+        <select name="vt" id="vt">
+          <option selected disabled>Select Vehicle Type</option>
+          <option value="2">Two Wheeler</option>
+          <option value="4">Four Wheeler</option>
+        </select>
+
+        <select name="vn" id="vn">
+          <option selected disabled >Select Your Ride</option>
+          <option value="Activa">Activa</option>
+          <option value="Yamaha">Yamaha</option>
+          <option value="Rajdoot">Rajdoot</option>
+          <option value="Suzuki Access">Suzuki Access</option>
+          <option value="Jupiter">Jupiter</option>
+          <option value="Swift Dezire">Swift Dezire</option>
+          <option value="Duster">Duster</option>
+          <option value="Maruti 800">Maruti 800</option>
+          <option value="Wagon R">Wagon R</option>
+          <option value="Audi">Audi</option>
+        </select>
+        <input type="text" placeholder="Total Hours" name="hour" id="hour" />
+        <input type="submit" class="submit"/>
+      </form>
+    </div>
+
+    <div class="d2">
+        <p>ADMIN LOGIN</p>
+      <form action="/admin" method="POST">
+        <input
+          type="text"
+          placeholder="Username"
+          name="username"
+          id="username"
+        />
+        <input
+          type="password"
+          placeholder="Password"
+          name="password"
+          id="password"
+        />
+        <input type="submit" class="submit" />
+      </form>
+    </div>
+  </body>
+</html>
